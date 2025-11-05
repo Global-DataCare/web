@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Global-DataCare | Espacio de datos de salud interoperable y seguro</title>
+  <meta name="description" content="Conecta la salud, la investigación y la protección civil en un espacio de datos basado en consentimiento y ciberseguridad avanzada." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --blue-900:#0B2A3A;
+      --blue:#0C5C86;
+      --green:#00A676;
+      --bg:#ffffff;
+      --radius:18px;
+      --gap:18px;
+      --shadow:0 10px 30px rgba(12,92,134,.15);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,sans-serif;color:#0b1320;background:var(--bg);line-height:1.55}
+    a{color:var(--blue);text-decoration:none}
+    img{max-width:100%;height:auto;border-radius:12px}
+    header{background:#ffffff;border-bottom:1px solid #eef2f5;position:relative;z-index:1}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;max-width:1080px;margin:auto}
+    nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0}
+    nav a{color:#0b1320}
+    .logo img{height:40px;width:auto}
+    .hero{position:relative;overflow:visible;padding:80px 24px;background:linear-gradient(180deg,#E7F7FF,#F8FFFD)}
+    .hero .wrap{max-width:1080px;margin:auto;display:grid;gap:28px;align-items:center}
+    @media(min-width:960px){.hero .wrap{grid-template-columns:1fr 1fr}}
+    .h1{font-size:44px;line-height:1.1;margin:0 0 10px;color:var(--blue-900)}
+    .lead{font-size:18px;color:#5b6675;max-width:700px}
+    .cta{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:12px 20px;border-radius:12px;font-weight:700;border:none;color:#fff;background:linear-gradient(180deg,var(--blue),#073850);box-shadow:var(--shadow)}
+    .btn.alt{background:linear-gradient(180deg,#17c398,var(--green))}
+    section{padding:56px 0}
+    .wrap{max-width:1080px;margin:auto;padding:0 24px}
+    .grid{display:grid;gap:var(--gap)}
+    @media(min-width:900px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}.grid.cols-2{grid-template-columns:repeat(2,1fr)}}
+    .card{border:1px solid #e7edf1;border-radius:var(--radius);padding:18px;background:#fff;box-shadow:var(--shadow)}
+    .footer{padding:32px 0;background:var(--blue-900);color:#fff;text-align:center}
+  
+    .img-emerg{width:100%;height:auto;image-rendering:auto;}
+    @media(min-width:960px){.img-emerg{max-width:720px}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo" style="display:flex;align-items:center;gap:10px">
+        <!-- Inline SVG logo, validated version (GLOBAL más grande, filete blanco en corazón) -->
+        <svg class="logo-svg" viewBox="0 0 220 240" width="150" preserveAspectRatio="xMidYMid meet" aria-label="Global Data Care" xmlns="http://www.w3.org/2000/svg" style="display:block">
+          <defs>
+            <style>
+              .gdc-stroke{fill:none;stroke:#0B2A3A;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+              .gdc-heart{fill:#00A676;stroke:#ffffff;stroke-width:2.2}
+              .gdc-ecg{fill:none;stroke:#ffffff;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+            
+    .img-emerg{width:100%;height:auto;image-rendering:auto;}
+    @media(min-width:960px){.img-emerg{max-width:720px}}
+  </style>
+          </defs>
+          <g transform="translate(10,0)">
+            <circle class="gdc-stroke" cx="100" cy="90" r="80"/>
+            <path class="gdc-stroke" d="M20 90H180"/>
+            <path class="gdc-stroke" d="M28 58 C70 40,130 40,172 58"/>
+            <path class="gdc-stroke" d="M28 122 C70 140,130 140,172 122"/>
+            <path class="gdc-stroke" d="M100 10V170"/>
+            <path class="gdc-stroke" d="M76 14 C60 42,60 138,76 166"/>
+            <path class="gdc-stroke" d="M124 14 C140 42,140 138,124 166"/>
+            <path class="gdc-heart" d="M100 140c-26-22-58-34-58-60 0-16 12-30 30-30 11 0 20 5 28 14 8-9 17-14 28-14 18 0 30 14 30 30 0 26-32 38-58 60z"/>
+            <path class="gdc-ecg" d="M62 102h20l10-24 14 40 12-16h24"/>
+          </g>
+          <g fill="#0B2A3A" text-anchor="middle">
+            <text x="110" y="200" font-family="Inter, system-ui, sans-serif" font-weight="900" font-size="36" letter-spacing="1.6">GLOBAL</text>
+            <text x="110" y="230" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="30" letter-spacing="1.4">DATA CARE</text>
+          </g>
+        </svg>
+      </div>
+      <ul>
+        <li><a href="#soluciones">Soluciones</a></li>
+        <li><a href="#seguridad">Seguridad</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <!-- Columna izquierda: texto -->
+        <div>
+          <h1 class="h1">Interoperabilidad y seguridad al servicio de la salud</h1>
+          <p class="lead">Global‑DataCare conecta salud, emergencias e investigación en un entorno de datos seguro, interoperable y gobernado por el consentimiento de cada persona. Tecnología europea que protege la información más sensible con cifrado y blockchain.</p>
+          <div class="cta">
+            <a class="btn" href="#contacto">Solicitar demo</a>
+            <a class="btn alt" href="#seguridad">Ver seguridad</a>
+          </div>
+        </div>
+        <!-- Columna derecha: logo + EMERGENCIAS luminosa LOCAL -->
+        <div>
+          <svg viewBox="0 0 220 260" width="100%" style="max-width:420px;display:block;margin:0 auto 14px" preserveAspectRatio="xMidYMid meet" aria-label="Global Data Care" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <style>
+                .gdc-stroke{fill:none;stroke:#0B2A3A;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+                .gdc-heart{fill:#00A676;stroke:#ffffff;stroke-width:2.2}
+                .gdc-ecg{fill:none;stroke:#ffffff;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+              
+    .img-emerg{width:100%;height:auto;image-rendering:auto;}
+    @media(min-width:960px){.img-emerg{max-width:720px}}
+  </style>
+            </defs>
+            <g transform="translate(10,0)">
+              <circle class="gdc-stroke" cx="100" cy="90" r="80"/>
+              <path class="gdc-stroke" d="M20 90H180"/>
+              <path class="gdc-stroke" d="M28 58 C70 40,130 40,172 58"/>
+              <path class="gdc-stroke" d="M28 122 C70 140,130 140,172 122"/>
+              <path class="gdc-stroke" d="M100 10V170"/>
+              <path class="gdc-stroke" d="M76 14 C60 42,60 138,76 166"/>
+              <path class="gdc-stroke" d="M124 14 C140 42,140 138,124 166"/>
+              <path class="gdc-heart" d="M100 140c-26-22-58-34-58-60 0-16 12-30 30-30 11 0 20 5 28 14 8-9 17-14 28-14 18 0 30 14 30 30 0 26-32 38-58 60z"/>
+              <path class="gdc-ecg" d="M62 102h20l10-24 14 40 12-16h24"/>
+            </g>
+            <g fill="#0B2A3A" text-anchor="middle">
+              <text x="110" y="200" font-family="Inter, system-ui, sans-serif" font-weight="900" font-size="36" letter-spacing="1.6">GLOBAL</text>
+              <text x="110" y="230" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="30" letter-spacing="1.4">DATA CARE</text>
+            </g>
+          </svg>
+          <img src="images/emergencias.jpg" alt="Intervención de emergencias con ambulancia y personal sanitario a plena luz del día" class="img-emerg" style="display:block;margin:0 auto;border-radius:16px;box-shadow:0 10px 30px rgba(12,92,134,.15)" loading="lazy"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="que-es" style="background:#ffffff">
+      <div class="wrap">
+        <h2 style="font-size:30px;color:var(--blue-900)">¿Qué es un espacio de datos?</h2>
+        <p style="color:#5b6675">
+          Un espacio de datos es un ecosistema de organizaciones que comparten información de forma segura
+          y gobernada, usando reglas comunes de confianza, identidad y consentimiento. Cada entidad conserva
+          sus datos en origen y solo comparte lo necesario con fines legítimos, con trazabilidad y control.
+        </p>
+        <ul style="color:#334155;line-height:1.7">
+          <li>Identidades verificadas para organizaciones, profesionales y servicios.</li>
+          <li>Consentimientos y permisos registrables que se pueden auditar.</li>
+          <li>Interoperabilidad técnica basada en estándares abiertos.</li>
+        </ul>
+
+        <h3 style="margin-top:28px;color:var(--blue-900)">¿Qué aporta Global‑DataCare?</h3>
+        <p style="color:#5b6675">
+          Global‑DataCare implementa este modelo para salud, emergencias e investigación. Conecta
+          hospitales, servicios de protección civil, aseguradoras y laboratorios en un entorno
+          interoperable basado en HL7 FHIR, IPS y DID, con certificación de consentimientos en blockchain.
+        </p>
+        <div class="grid cols-3" style="margin-top:14px">
+          <div class="card"><strong>Continuidad asistencial</strong><br>Un índice unificado del paciente (UHI) enlaza los portales y documentos clínicos autorizados.</div>
+          <div class="card"><strong>Emergencias</strong><br>Acceso rápido y autorizado a datos críticos en situaciones de urgencia, con soporte offline.</div>
+          <div class="card"><strong>Investigación</strong><br>Gemelos digitales anonimizados y datos de calidad para estudios y ensayos clínicos.</div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="soluciones">
+      <div class="wrap">
+        <h2 style="font-size:30px;color:var(--blue-900)">Soluciones por sector</h2>
+        <div class="grid cols-2">
+          <div class="card"><h3>Hospitales y clínicas</h3><p>Continuidad asistencial, interoperabilidad HL7 FHIR e IPS, comunicación segura entre profesionales y pacientes.</p></div>
+          <div class="card"><h3>Emergencias</h3><p>Acceso seguro y rápido a datos críticos con consentimiento del paciente. Soporte offline para catástrofes y desconexión.</p></div>
+          <div class="card"><h3>Investigación y CROs</h3><p>Gemelos digitales anonimizados para investigación y ensayos clínicos con trazabilidad blockchain.</p></div>
+          <div class="card"><h3>Seguros y entidades</h3><p>Verificación automática de coberturas y consentimientos. Reducción de fraude y costes administrativos.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <div class="wrap">
+        <div class="grid cols-3">
+          <!-- Investigación en laboratorio (LOCAL) -->
+          <img src="images/laboratorio.jpg" alt="Laboratorio de investigación luminoso con microscopio y equipo" style="border-radius:16px;box-shadow:var(--shadow);display:block" loading="lazy">
+          <!-- Persona mayor atendida por sanitario: mantenemos la imagen clara previa (externa) -->
+          <img src="images/mayor_sanitario.jpg" alt="Sanitario ayudando a persona mayor en entorno claro" style="border-radius:16px;box-shadow:var(--shadow);display:block" loading="lazy">
+          <!-- Consulta médica luminosa: pendiente de generar; mantenemos la de consulta luminosa anterior externa como temporal -->
+          <img src="images/consulta.jpg" alt="Consulta médica luminosa con atención al paciente" style="border-radius:16px;box-shadow:var(--shadow);display:block" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="seguridad">
+      <div class="wrap">
+        <h2 style="font-size:30px;color:var(--blue-900)">Seguridad y cumplimiento</h2>
+        <div class="grid cols-3">
+          <div class="card"><h3>Consentimientos en blockchain</h3><p>Todos los accesos y permisos quedan registrados con trazabilidad y auditoría completa.</p></div>
+          <div class="card"><h3>Cifrado post-cuántico</h3><p>Protección frente a amenazas futuras mediante algoritmos post-cuánticos y AES.</p></div>
+          <div class="card"><h3>Normativa europea</h3><p>Cumplimiento del RGPD, IDSA y principios Gaia-X. Interoperable con espacios de datos europeos.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" style="background:linear-gradient(180deg,#E7F7FF,#ffffff)">
+      <div class="wrap">
+        <h2 style="font-size:30px;color:var(--blue-900)">Contacto</h2>
+        <p style="color:#5b6675">¿Quieres saber cómo Global-DataCare puede integrarse en tu organización? Escríbenos y te contactaremos.</p>
+        <p style="color:#5b6675; margin-top:-6px">Email: <a href="mailto:dgc@accuro.es">dgc@accuro.es</a> · Tel: (+34) 91 710 48 40</p>
+        <form action="#" method="POST" style="display:grid;gap:12px;max-width:560px">
+          <input name="nombre" placeholder="Nombre" required style="padding:12px;border:1px solid #dbe5ea;border-radius:10px;font:inherit" />
+          <input type="email" name="email" placeholder="Email" required style="padding:12px;border:1px solid #dbe5ea;border-radius:10px;font:inherit" />
+          <textarea name="mensaje" placeholder="Cuéntanos tu caso de uso" rows="4" style="padding:12px;border:1px solid #dbe5ea;border-radius:10px;font:inherit"></textarea>
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Global-DataCare. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

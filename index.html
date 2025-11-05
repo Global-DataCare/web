@@ -114,12 +114,28 @@
         <h2 style="font-size:30px;color:var(--blue-900)">Contacto</h2>
         <p style="color:#5b6675">¿Quieres saber cómo Global-DataCare puede integrarse en tu organización? Escríbenos y te contactaremos.</p>
         <p style="color:#5b6675; margin-top:-6px">Email: <a href="mailto:gdc@accuro.es">gdc@accuro.es</a> · Tel: (+34) 91 710 48 40</p>
-        <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSeaQiWVt_YnBWodtVvmNJ4fA8mVwBpJG0Z-79mPvFrYRznCfQ/formResponse" method="POST" style="display:grid;gap:12px;max-width:560px">
+        <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSeaQiWVt_YnBWodtVvmNJ4fA8mVwBpJG0Z-79mPvFrYRznCfQ/formResponse" method="POST" target="hidden_iframe" style="display:grid;gap:12px;max-width:560px">
           <input name="entry.1514310256" placeholder="Nombre" required style="padding:12px;border:1px solid #dbe5ea;border-radius:10px;font:inherit" />
           <input type="email" name="entry.23302327" placeholder="Email" required style="padding:12px;border:1px solid #dbe5ea;border-radius:10px;font:inherit" />
           <textarea name="entry.731442281" placeholder="Cuéntanos tu caso de uso" rows="4" style="padding:12px;border:1px solid #dbe5ea;border-radius:10px;font:inherit"></textarea>
           <button type="submit" class="btn">Enviar</button>
         </form>
+        <div id="form-confirmation" style="display:none; color: var(--green); margin-top: 15px; font-weight: bold;">
+          ¡Gracias! Tu mensaje ha sido enviado correctamente.
+        </div>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+        <script type="text/javascript">
+          document.getElementById('contact-form').addEventListener('submit', function() {
+            setTimeout(function() {
+              var form = document.getElementById('contact-form');
+              var confirmationMessage = document.getElementById('form-confirmation');
+              
+              // Hide the form and show the confirmation message
+              form.style.display = 'none';
+              confirmationMessage.style.display = 'block';
+            }, 100);
+          });
+        </script>
         
       </div>
     </section>

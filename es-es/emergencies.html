@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Global Data Care - Emergencias</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="../images/logo.svg" alt="Global Data Care logo"></a>
+      </div>
+      <ul>
+        <li><a href="health.html">Salud</a></li>
+        <li><a href="research.html">Investigación</a></li>
+        <li><a href="emergencies.html"><strong>Emergencias</strong></a></li>
+        <li><a href="insurers.html">Aseguradoras</a></li>
+      </ul>
+      <button class="hamburger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <h1 class="h1">Creación y acceso a datos de emergencias</h1>
+          <p class="lead">Acceso rápido y controlado a datos críticos por parte de equipos autorizados, con trazabilidad y límites claros.</p>
+        </div>
+        <div>
+          <img src="../images/emergencias.jpg" alt="Intervención de emergencias" style="border-radius:16px;box-shadow:var(--shadow);" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="grid cols-2">
+          <div class="card">
+            <h2>Tarjeta de emergencia</h2>
+            <p>Sección dedicada con enlaces a alergias críticas, medicación activa, diagnósticos relevantes y contactos de emergencia.</p>
+          </div>
+          <div class="card">
+            <h2>Permisos de emergencia</h2>
+            <ul>
+              <li>Acceso de lectura a secciones críticas para cuerpos autorizados</li>
+              <li>Ventanas temporales de acceso con registro</li>
+              <li>Modo offline cuando sea necesario con sincronización posterior</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h2>Ejemplos de uso</h2>
+            <ul class="muted" style="padding-left:18px">
+              <li>Servicio de emergencias accede a alergias críticas durante 2 horas</li>
+              <li>Hospital 3 crea una nota de intervención y la vincula a la continuidad asistencial</li>
+            </ul>
+            <p class="muted" style="font-size:12px">
+              Acceso siempre auditado y limitado por ventana temporal y secciones autorizadas.
+            </p>
+          </div>
+          <div class="card">
+            <h2>Creación de registros</h2>
+            <p>Capacidad de crear notas de intervención y documentos de episodio, visibles en continuidad asistencial bajo el mismo índice.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© Accuro Technology SL</p>
+  </footer>
+  <script>
+    const hamburger = document.querySelector('.hamburger-btn');
+    const navUl = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', () => {
+      navUl.classList.toggle('nav-active');
+    });
+  </script>
+</body>
+</html>

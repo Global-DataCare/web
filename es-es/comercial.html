@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang='es'>
+<head>
+<meta charset='utf-8'>
+<title>KTED COMPLETO – Global-DataCare</title>
+<link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap' rel='stylesheet'>
+<style>
+body{
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:#E7F4FF;
+  color:#003049;
+  padding:24px;
+}
+.wrap{
+  max-width:1200px;
+  margin:0 auto;
+}
+h2,h3,h4{
+  color:#003049;
+  font-weight:700;
+}
+.badges span{
+  display:inline-block;
+  background:white;
+  padding:6px 14px;
+  border-radius:20px;
+  margin-right:8px;
+  font-size:14px;
+  box-shadow:0 2px 6px rgba(0,0,0,.08);
+}
+.grid2{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
+}
+.card{
+  background:white;
+  border-radius:18px;
+  padding:24px;
+  box-shadow:0 4px 16px rgba(0,0,0,.09);
+}
+.center-card{
+  grid-column:1/-1;
+  max-width:60%;
+  margin:0 auto;
+}
+.timeline-actions,
+.timeline-results{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  text-align:center;
+  font-size:15px;
+  margin-bottom:20px;
+}
+svg{
+  width:100%;
+  height:120px;
+}
+.btn{
+  background:#0077B6;
+  color:white;
+  padding:12px 22px;
+  border-radius:10px;
+  cursor:pointer;
+  text-decoration:none;
+  display:inline-block;
+  margin-bottom:20px;
+  border:none;
+  font-size:16px;
+}
+#formKTED{
+  display:none;
+}
+.form-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+.form-card{
+  background:white;
+  padding:24px;
+  border-radius:18px;
+  box-shadow:0 4px 16px rgba(0,0,0,.09);
+  margin-top:30px;
+}
+input,select,textarea{
+  width:100%;
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #c3ccd5;
+  font-size:15px;
+}
+.finbox{
+  background:#F2FAFF;
+  padding:20px;
+  border-radius:14px;
+  font-size:14px;
+  margin-top:40px;
+  border-left:6px solid #0096C7;
+}
+</style>
+<script>
+function toggleKTEDForm(){
+  let f=document.getElementById('formKTED');
+  f.style.display = f.style.display==='none' ? 'block' : 'none';
+}
+</script>
+</head>
+
+<body>
+<div class='wrap'>
+
+<h2>Kit Espacios de Datos 2025 (KTED 2025)</h2>
+
+<p>
+El Kit Espacios de Datos (KTED 2025) es una ayuda pública que cubre los costes de adhesión, conexión y publicación de datos en espacios de datos reconocidos por Red.es, como Global-DataCare.
+</p>
+
+<div class='badges'>
+  <span>HL7</span>
+  <span>FHIR</span>
+  <span>Interoperabilidad</span>
+  <span>Privacidad</span>
+  <span>Trazabilidad</span>
+</div>
+
+<h3>Cuantías financiables</h3>
+
+<div class='grid2'>
+  <div class='card'><b>Proveedor – Entidades públicas y privadas</b><br><span style='font-size:26px;'>Hasta 30 000 €</span></div>
+  <div class='card'><b>Proveedor – Administraciones públicas</b><br><span style='font-size:26px;'>Hasta 50 000 €</span></div>
+  <div class='card'><b>Participante – Entidades públicas y privadas</b><br><span style='font-size:26px;'>Hasta 15 000 €</span></div>
+  <div class='card'><b>Participante – Administraciones públicas</b><br><span style='font-size:26px;'>Hasta 25 000 €</span></div>
+</div>
+
+<h3 style='margin-top:40px;'>¿Qué cubre la subvención?</h3>
+
+<div class='grid2'>
+  <div class='card'><h4>Adhesión al espacio</h4>Contrato, alta en catálogo y registro de identidad digital.</div>
+  <div class='card'><h4>Conexión técnica</h4>API, nodo validado, interoperabilidad.</div>
+  <div class='card'><h4>Soporte jurídico</h4>RGPD, ENS, NIS2, Reglamento 2025/327.</div>
+  <div class='card'><h4>Publicación de datos</h4>DCAT, HL7 FHIR.</div>
+  <div class='card center-card'><h4>Acompañamiento del promotor</h4>Plantillas, memorias técnicas y soporte Red.es.</div>
+</div>
+
+<h3 style='margin-top:40px;'>Beneficios para tu entidad</h3>
+
+<div class='grid2'>
+  <div class='card'><h4>Financiación directa</h4>Hasta 30 000 € por entidad adherida.</div>
+  <div class='card'><h4>Conexión validada</h4>Acceso operativo a un espacio reconocido por Red.es.</div>
+  <div class='card'><h4>Innovación colaborativa</h4>Proyectos de datos e IA.</div>
+  <div class='card'><h4>Cumplimiento legal</h4>Garantía RGPD, ENS y NIS2.</div>
+  <div class='card center-card'><h4>Visibilidad europea</h4>Alineación con EU Data Spaces y Gaia-X.</div>
+</div>
+
+<h3 style='margin-top:40px;'>Pasos para tu entidad</h3>
+<h4>Acción</h4>
+
+<div class='timeline-actions'>
+  <div>Contacta con ACCURO</div>
+  <div>Firma del contrato</div>
+  <div>Configuración técnica</div>
+  <div>Preparación de memoria</div>
+  <div>Ejecución</div>
+  <div>Justificación</div>
+</div>
+
+<svg viewBox="0 0 1100 120">
+  <line x1="0" y1="60" x2="1100" y2="60" stroke="#0077B6" stroke-width="4"/>
+
+  <circle cx="100" cy="60" r="22" fill="#0077B6"/>
+  <circle cx="300" cy="60" r="22" fill="#0077B6"/>
+  <circle cx="500" cy="60" r="22" fill="#0077B6"/>
+  <circle cx="700" cy="60" r="22" fill="#0077B6"/>
+  <circle cx="900" cy="60" r="22" fill="#0077B6"/>
+  <circle cx="1100" cy="60" r="22" fill="#0077B6"/>
+
+  <text x="100" y="66" font-size="20" text-anchor="middle" fill="white" font-weight="700">1</text>
+  <text x="300" y="66" font-size="20" text-anchor="middle" fill="white" font-weight="700">2</text>
+  <text x="500" y="66" font-size="20" text-anchor="middle" fill="white" font-weight="700">3</text>
+  <text x="700" y="66" font-size="20" text-anchor="middle" fill="white" font-weight="700">4</text>
+  <text x="900" y="66" font-size="20" text-anchor="middle" fill="white" font-weight="700">5</text>
+  <text x="1100" y="66" font-size="20" text-anchor="middle" fill="white" font-weight="700">6</text>
+</svg>
+
+<h4>Resultado</h4>
+
+<div class='timeline-results'>
+  <div>Requisitos validados</div>
+  <div>Entidad adherida</div>
+  <div>Acceso operativo</div>
+  <div>Solicitud presentada</div>
+  <div>Gastos aceptados</div>
+  <div>Subvención concedida</div>
+</div>
+
+<h3 style='margin-top:40px;'>Únete al Espacio de Datos Global-DataCare con ACCURO</h3>
+<p>ACCURO pone a tu alcance Global-DataCare, el espacio de datos en salud digital reconocido por Red.es.</p>
+
+<button class='btn' onclick='toggleKTEDForm()'>Solicitar información / reunión</button>
+
+<div id='formKTED' class='form-card'>
+  <h3>Solicitud de información</h3>
+
+  <div class='form-grid'>
+    <div><label>Nombre y apellidos</label><input></div>
+    <div><label>Cargo / Rol</label><input></div>
+
+    <div><label>Correo electrónico</label><input></div>
+    <div><label>Teléfono</label><input></div>
+
+    <div><label>Nombre legal</label><input></div>
+    <div><label>Acrónimo</label><input></div>
+
+    <div><label>NIF / CIF / VAT</label><input></div>
+    <div><label>Sitio web</label><input></div>
+
+    <div><label>País</label><input></div>
+    <div><label>Estado / Provincia</label><input></div>
+
+    <div><label>Ciudad</label><input></div>
+    <div><label>Código postal</label><input></div>
+
+    <div style='grid-column:1/-1;'>
+      <label>Dirección</label><input>
+    </div>
+
+    <div style='grid-column:1/-1;'>
+      <label>Perfil de la entidad</label>
+      <select>
+        <option>Seleccione…</option>
+        <option>Hospital / Centro médico</option>
+        <option>Laboratorio</option>
+        <option>Investigación / CRO</option>
+        <option>Protección civil / First responders</option>
+        <option>Administración pública</option>
+        <option>Aseguradora</option>
+        <option>Universidad</option>
+        <option>Otro</option>
+      </select>
+    </div>
+
+    <div style='grid-column:1/-1;'>
+      <label>Rol en el ecosistema</label>
+      <select>
+        <option>Seleccione…</option>
+        <option>Proveedor de datos</option>
+        <option>Proveedor de servicios</option>
+        <option>Consumidor de datos</option>
+      </select>
+    </div>
+
+    <div style='grid-column:1/-1;'>
+      <label>Áreas de interés</label>
+      <textarea rows='4' placeholder='Describe casos de uso, fuentes de datos, estándares actuales…'></textarea>
+    </div>
+
+  </div>
+
+  <label><input type='checkbox'> Confirmo estar facultado para representar a la organización.</label><br><br>
+
+  <button class='btn'>Enviar</button>
+</div>
+
+
+<h3 style='margin-top:50px;'>Normativa y recursos</h3>
+
+<ul>
+<li><a href='https://cred.digital.gob.es/content/dam/cred/img/docs/Espacios_de_Datos_Elegibles_KTED.pdf'>
+Lista oficial de espacios elegibles (16/07/2025)
+</a></li>
+<li><a href='https://www.boe.es/boe/dias/2025/07/16/pdfs/BOE-A-2025-14782.pdf'>
+BOE — Orden TDF/758/2025
+</a></li>
+<li><a href='https://www.acelerapyme.gob.es/kit-espacios-de-datos'>
+Guía Acelera Pyme
+</a></li>
+</ul>
+
+<div class='finbox'>
+Financiado por la Unión Europea – NextGenerationEU. Programa gestionado por Red.es, Ministerio para la Transformación Digital y de la Función Pública. Global-DataCare figura en la lista oficial de espacios elegibles.
+</div>
+
+</div>
+</body>
+</html>

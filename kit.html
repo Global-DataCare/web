@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kit de Espacio de Datos | Global-DataCare</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"/>
+<style>
+  .k-card { background:#ffffff; border-radius:16px; padding:24px; box-shadow:0 6px 20px rgba(12,92,134,.15); }
+  .k-grid-2 { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
+  .k-center { grid-column:1/-1; max-width:60%; margin:0 auto; }
+  .k-form-card { background:white; padding:28px; border-radius:16px; box-shadow:0 6px 20px rgba(12,92,134,.15); margin-top:28px; }
+  .k-form-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }
+  .k-form-grid input, .k-form-grid select, .k-form-grid textarea {
+    padding:10px; border-radius:10px; border:1px solid #cdd6dd; width:100%; font-family:'Open Sans';
+  }
+  #formKTED { display:none; }
+</style>
+<script>
+function toggleKTEDForm(){ 
+  let f=document.getElementById('formKTED'); 
+  f.style.display = f.style.display==='none' ? 'block' : 'none'; 
+}
+</script>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo" style="display:flex;align-items:center;gap:10px">
+      <a href="index.html"><img src="images/logo.svg" alt="Global Data Care logo"></a>
+    </div>
+    <ul>
+      <li><a href="subvencion.html">Subvención</a></li>
+      <li><a href="kit.html"><strong>Kit</strong></a></li>
+      <li><a href="health.html">Salud</a></li>
+      <li><a href="research.html">Investigación</a></li>
+      <li><a href="emergencies.html">Emergencias</a></li>
+      <li><a href="insurers.html">Aseguradoras</a></li>
+    </ul>
+    <button class="hamburger-btn"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+<main>
+<section style="background:#E7F7FF;padding:50px 0;">
+  <div class="wrap">
+    <h1 class="h1">Kit de Espacio de Datos 2025</h1>
+    <p class="lead" style="max-width:760px">
+      El Kit de Espacio de Datos cubre los costes de adhesión, conexión técnica,
+      interoperabilidad y publicación de datos en espacios reconocidos por Red.es,
+      como Global-DataCare.
+    </p>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <h2>Cuantías financiables</h2>
+    <div class="k-grid-2">
+      <div class="k-card"><strong>Proveedor (privadas)</strong><br><span style="font-size:24px">Hasta 30 000 €</span></div>
+      <div class="k-card"><strong>Proveedor (públicas)</strong><br><span style="font-size:24px">Hasta 50 000 €</span></div>
+      <div class="k-card"><strong>Participante (privadas)</strong><br><span style="font-size:24px">Hasta 15 000 €</span></div>
+      <div class="k-card"><strong>Participante (públicas)</strong><br><span style="font-size:24px">Hasta 25 000 €</span></div>
+    </div>
+    <h2 style="margin-top:40px;">¿Qué cubre la ayuda?</h2>
+    <div class="k-grid-2">
+      <div class="k-card"><h3>Adhesión</h3>Contrato, identidad digital, catálogo.</div>
+      <div class="k-card"><h3>Conexión técnica</h3>Nodo, API, validación de interoperabilidad.</div>
+      <div class="k-card"><h3>Soporte jurídico</h3>RGPD, ENS, NIS2, contratos de tratamiento.</div>
+      <div class="k-card"><h3>Publicación de datos</h3>DCAT, HL7 FHIR, IPS.</div>
+      <div class="k-card k-center"><h3>Acompañamiento del promotor</h3>Memorias, plantillas, soporte Red.es.</div>
+    </div>
+
+    <h2 style="margin-top:40px;">Beneficios para tu entidad</h2>
+    <div class="k-grid-2">
+      <div class="k-card"><h3>Financiación directa</h3>Hasta 30k para conexión y datos.</div>
+      <div class="k-card"><h3>Conexión validada</h3>Acceso operativo al espacio.</div>
+      <div class="k-card"><h3>Innovación</h3>Datos + IA + interoperabilidad.</div>
+      <div class="k-card"><h3>Cumplimiento legal</h3>RGPD, ENS, NIS2.</div>
+      <div class="k-card k-center"><h3>Visibilidad europea</h3>Alineado con EU Data Spaces.</div>
+    </div>
+    <h2 style="margin-top:40px;">Pasos para tu entidad</h2>
+    <h3>Acción</h3>
+    <div class="k-grid-2" style="grid-template-columns:repeat(6,1fr);">
+      <div>Contacto</div><div>Contrato</div><div>Conexión</div>
+      <div>Memoria</div><div>Ejecución</div><div>Justificación</div>
+    </div>
+    <svg viewBox="0 0 1100 120" style="margin:20px 0;">
+      <line x1="0" y1="60" x2="1100" y2="60" stroke="#0c5c86" stroke-width="4"/>
+      <circle cx="100" cy="60" r="22" fill="#0c5c86"/>
+      <circle cx="300" cy="60" r="22" fill="#0c5c86"/>
+      <circle cx="500" cy="60" r="22" fill="#0c5c86"/>
+      <circle cx="700" cy="60" r="22" fill="#0c5c86"/>
+      <circle cx="900" cy="60" r="22" fill="#0c5c86"/>
+      <circle cx="1100" cy="60" r="22" fill="#0c5c86"/>
+      <text x="100" y="66" text-anchor="middle" fill="white" font-size="20">1</text>
+      <text x="300" y="66" text-anchor="middle" fill="white" font-size="20">2</text>
+      <text x="500" y="66" text-anchor="middle" fill="white" font-size="20">3</text>
+      <text x="700" y="66" text-anchor="middle" fill="white" font-size="20">4</text>
+      <text x="900" y="66" text-anchor="middle" fill="white" font-size="20">5</text>
+      <text x="1100" y="66" text-anchor="middle" fill="white" font-size="20">6</text>
+    </svg>
+    <h3>Resultado</h3>
+    <div class="k-grid-2" style="grid-template-columns:repeat(6,1fr);">
+      <div>Validación</div><div>Adhesión</div><div>Acceso</div>
+      <div>Solicitud</div><div>Gastos</div><div>Concesión</div>
+    </div>
+    <h2 style="margin-top:50px;">Únete al espacio de datos</h2>
+    <p>ACCURO pone a tu alcance Global-DataCare, espacio reconocido por Red.es.</p>
+    <button class="btn" onclick="toggleKTEDForm()">Solicitar información / reunión</button>
+    <div id="formKTED" class="k-form-card">
+      <h3>Solicitud de información</h3>
+      <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSeaQiWVt_YnBWodtVvmNJ4fA8mVwBpJG0Z-79mPvFrYRznCfQ/formResponse" method="POST" target="hidden_iframe">
+        <div class="k-form-grid">
+          <div><label>Nombre y apellidos</label><input name="entry.1514310256" required></div>
+          <div><label>Cargo / Rol</label><input></div>
+          <div><label>Correo electrónico</label><input type="email" name="entry.23302327" required></div>
+          <div><label>Teléfono</label><input></div>
+          <div><label>Nombre legal</label><input></div>
+          <div><label>Acrónimo</label><input></div>
+          <div><label>NIF / CIF / VAT</label><input></div>
+          <div><label>Sitio web</label><input></div>
+          <div><label>País</label><input></div>
+          <div><label>Estado / Provincia</label><input></div>
+          <div><label>Ciudad</label><input></div>
+          <div><label>Código postal</label><input></div>
+          <div style="grid-column:1/-1;"><label>Dirección</label><input></div>
+
+          <div style="grid-column:1/-1;">
+            <label>Perfil de la entidad</label>
+            <select>
+              <option>Seleccione…</option>
+              <option>Hospital / Centro médico</option>
+              <option>Laboratorio</option>
+              <option>Investigación / CRO</option>
+              <option>Protección civil / Emergencias</option>
+              <option>Administración pública</option>
+              <option>Aseguradora</option>
+              <option>Universidad</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div style="grid-column:1/-1;">
+            <label>Rol en el ecosistema</label>
+            <select>
+              <option>Seleccione…</option>
+              <option>Proveedor de datos</option>
+              <option>Proveedor de servicios</option>
+              <option>Consumidor de datos</option>
+            </select>
+          </div>
+          <div style="grid-column:1/-1;">
+            <label>Áreas de interés</label>
+            <textarea name="entry.731442281" rows="4"></textarea>
+          </div>
+        </div>
+        <label><input type="checkbox"> Confirmo estar facultado para representar a la organización.</label><br><br>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+      <div id="form-confirmation" style="display:none; color: var(--green); margin-top: 15px; font-weight: bold;">
+        ¡Gracias! Tu mensaje ha sido enviado correctamente.
+      </div>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+      <script type="text/javascript">
+        document.getElementById('contact-form').addEventListener('submit', function() {
+          setTimeout(function() {
+            var form = document.getElementById('contact-form');
+            var confirmationMessage = document.getElementById('form-confirmation');
+            form.style.display = 'none';
+            confirmationMessage.style.display = 'block';
+          }, 100);
+        });
+      </script>
+    </div>
+    <h2 style="margin-top:50px">Normativa y recursos</h2>
+    <ul>
+      <li><a href="https://cred.digital.gob.es/content/dam/cred/img/docs/Espacios_de_Datos_Elegibles_KTED.pdf">Lista oficial de espacios elegibles</a></li>
+      <li><a href="https://www.boe.es/boe/dias/2025/07/16/pdfs/BOE-A-2025-14782.pdf">BOE − Orden TDF/758/2025</a></li>
+      <li><a href="https://www.acelerapyme.gob.es/kit-espacios-de-datos">Guía Acelera Pyme</a></li>
+    </ul>
+    <div style="background:#F2FAFF;padding:20px;border-radius:16px;margin-top:20px;border-left:6px solid #0096C7;">
+      Financiado por la Unión Europea – NextGenerationEU.  
+      Programa gestionado por Red.es.
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <p>© 2025 Accuro Technology SL. Todos los derechos reservados.</p>
+</footer>
+<script>
+    const hamburger = document.querySelector('.hamburger-btn');
+    const navUl = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', () => {
+      navUl.classList.toggle('nav-active');
+    });
+  </script>
+</body>
+</html>

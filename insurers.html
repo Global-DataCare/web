@@ -1,0 +1,77 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Global Data Care - Seguros y entidades</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.svg" alt="Global Data Care logo"></a>
+      </div>
+      <ul>
+        <li><a href="subvencion.html">Subvención</a></li>
+        <li><a href="kit.html">Kit</a></li>
+        <li><a href="health.html">Salud</a></li>
+        <li><a href="research.html">Investigación</a></li>
+        <li><a href="emergencies.html">Emergencias</a></li>
+        <li><a href="insurers.html"><strong>Aseguradoras</strong></a></li>
+      </ul>
+      <button class="hamburger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <h1 class="h1">Seguros y entidades</h1>
+          <p class="lead">Optimice la verificación de coberturas y la gestión de consentimientos, reduciendo el fraude y los costes administrativos.</p>
+        </div>
+        <div>
+          <img src="images/consulta.jpg" alt="Consulta médica y administrativa" style="border-radius:16px;box-shadow:var(--shadow);" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="grid cols-3">
+          <div class="card">
+            <h2>Verificación automática</h2>
+            <p>Acceda a un sistema unificado para verificar coberturas y consentimientos del paciente en tiempo real, agilizando autorizaciones y pagos.</p>
+          </div>
+          <div class="card">
+            <h2>Reducción de fraude</h2>
+            <p>La trazabilidad basada en blockchain y la gestión de identidades verificadas minimizan el riesgo de reclamaciones fraudulentas y suplantación de identidad.</p>
+          </div>
+          <div class="card">
+            <h2>Eficiencia administrativa</h2>
+            <p>Reduzca la carga de trabajo manual y los errores asociados a la gestión de documentación y consentimientos en papel o en sistemas aislados.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© Accuro Technology SL</p>
+  </footer>
+  <script>
+    const hamburger = document.querySelector('.hamburger-btn');
+    const navUl = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', () => {
+      navUl.classList.toggle('nav-active');
+    });
+  </script>
+</body>
+</html>

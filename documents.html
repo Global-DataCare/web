@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Global-DataCare | Documentación</title>
+  <meta name="description" content="Documentación técnica para integradores de Global-DataCare." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- 1. Add styles for Tocbot -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.27.20/tocbot.css">
+  <!-- Add highlight.js theme -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+  <style>
+    /* 2. Add CSS for the two-column layout and sticky TOC */
+    .docs-container {
+      display: flex;
+      gap: 30px;
+    }
+    .toc-container {
+      width: 240px;
+      flex-shrink: 0;
+      position: sticky;
+      top: 20px;
+      height: calc(100vh - 40px);
+      overflow-y: auto;
+    }
+    .content-container {
+      flex-grow: 1;
+      max-width: 800px;
+    }
+    .toc-container .toc-link::before {
+        background-color: #e0e0e0;
+    }
+    .toc-container .is-active-link::before {
+        background-color: var(--blue);
+    }
+
+    /* FIX 2: Style code blocks to prevent overflow */
+    .content-container pre {
+      overflow-x: auto; /* Add horizontal scroll on overflow */
+      border-radius: 8px;
+      white-space: pre;
+    }
+
+    .content-container code {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.9em;
+    }
+
+    /* Style for inline code snippets (e.g., `variable_name`) */
+    .content-container :not(pre) > code {
+
+      color: #ffffff; /* White */
+      background-color: #000f7f; /* Blue */
+      padding: 0.2em 0.4em;
+      margin: 0;
+      font-size: 85%;
+    }
+
+    /* FIX 2: Media query for responsive design */
+    @media (max-width: 900px) {
+      .docs-container {
+        flex-direction: column;
+      }
+      .toc-container {
+        position: static;
+        width: 100%;
+        height: auto;
+        overflow-y: visible;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+        <a href="index.html"><img src="images/logo.svg" alt="Global Data Care logo"></a>
+      </div>
+      <ul>
+        <li><a href="subvencion.html">Subvención</a></li>
+        <li><a href="kit.html">Kit</a></li>
+        <li><a href="health.html">Salud</a></li>
+        <li><a href="research.html">Investigación</a></li>
+        <li><a href="emergencies.html">Emergencias</a></li>
+        <li><a href="insurers.html">Aseguradoras</a></li>
+        <li><a href="documents.html">Documentos</a></li>
+      </ul>
+      <button class="hamburger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="wrap">
+        <h1>Guía de Integración de API</h1>
+        <!-- 3. Update HTML structure for the two panels -->
+        <div class="docs-container">
+          <div class="toc-container">
+            <strong>Índice</strong>
+            <div class="js-toc"></div>
+          </div>
+          <div class="content-container js-toc-content">
+            <div id="markdown-content"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Accuro Technology SL. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- 4. Add the Tocbot script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.27.20/tocbot.min.js"></script>
+  <!-- Add highlight.js script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger-btn');
+    const navUl = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', () => {
+      navUl.classList.toggle('nav-active');
+    });
+
+    // 5. Update the script to initialize Tocbot after loading Markdown
+    fetch('https://raw.githubusercontent.com/Global-DataCare/docs/refs/heads/main/API_INTEGRATORS_GUIDE.md')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text();
+      })
+      .then(text => {
+        // FIX 1: Add the headerIds option to make the index links work
+        document.getElementById('markdown-content').innerHTML =
+          marked.parse(text, { headerIds: true });
+        
+        // FIX 2: Manually trigger highlight.js after content is rendered
+        hljs.highlightAll();
+
+        tocbot.init({
+          tocSelector: '.js-toc',
+          contentSelector: '.js-toc-content',
+          headingSelector: 'h1, h2, h3',
+          hasInnerContainers: true,
+          // FIX 1: Add smooth scroll options to fix navigation
+          scrollSmooth: true,
+          scrollSmoothDuration: 300,
+        });
+      })
+      .catch(error => {
+        console.error('Error fetching the Markdown file:', error);
+        document.getElementById('markdown-content').innerHTML =
+          '<p style="color:red;">Error: No se pudo cargar el archivo de documentación. Por favor, revise la consola para más detalles.</p>';
+      });
+  </script>
+</body>
+</html>

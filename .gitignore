@@ -1,3 +1,4 @@
+*.old
 documents/SEDIA-Memoria_Tecnica_Segunda_Convocatoria_V3.pdf
 documents/web-espacio de datos red mente sana.pdf
 documents/TEXTOS BUSINESS CASE GLOBAL DATA CARE/ASEGURADORAS/Beneficios y cómo lo hacemos con Aseguradoras.docx
@@ -12,3 +13,4 @@ documents/Beneficios y cómo lo hacemos emergencias.txt
 documents/Beneficios y cómo lo hacemos Investigación.txt
 documents/Beneficios y cómo lo hacemos Salud y sociosanitario.txt
 documents/Textos simplificados web.txt
+.continue/rules/englishcodeonly.md
